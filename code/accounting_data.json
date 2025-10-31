@@ -1,0 +1,35 @@
+{
+  "transactions": [
+    {
+      "transaction_id": "txn_1761891581631",
+      "amount": 1234.0,
+      "category": "购物",
+      "date": "2025-09-30",
+      "type": "支出",
+      "note": "1"
+    },
+    {
+      "transaction_id": "txn_1761891589061",
+      "amount": 2345.0,
+      "category": "交通",
+      "date": "2025-08-31",
+      "type": "支出",
+      "note": "2"
+    },
+    {
+      "transaction_id": "txn_1761891596559",
+      "amount": 3456.0,
+      "category": "住房",
+      "date": "2025-10-31",
+      "type": "支出",
+      "note": "3"
+    }
+  ],
+  "budgets": [
+    {
+      "budget_id": "budget_1",
+      "amount": 5000,
+      "period": "monthly"
+    }
+  ]
+}
