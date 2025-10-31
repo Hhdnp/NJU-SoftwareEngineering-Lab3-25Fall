@@ -1,2 +1,3 @@
 *.pdf
 /code/__pycache__/
+/code/accounting_data.json

@@ -143,6 +143,7 @@ class TransactionWindow:
             transactions.append(transaction)
 
             # 保存数据
+            data_manager.transactions = transactions
             data_manager.save_data()
 
             messagebox.showinfo("成功", "交易记录添加成功！")
