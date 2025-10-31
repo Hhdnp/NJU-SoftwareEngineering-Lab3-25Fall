@@ -120,6 +120,19 @@ class DataManager:
 
         except Exception as e:
             print(f"保存数据失败: {e}")
+    
+    def delete_transactions(self, transaction_ids):
+        """删除指定的交易记录"""
+        self.transactions = [
+            tx for tx in self.transactions if tx.transaction_id not in transaction_ids]
+        self.save_data()
+
+    def get_transaction_by_id(self, transaction_id):
+        """根据ID获取交易记录"""
+        for tx in self.transactions:
+            if tx.transaction_id == transaction_id:
+                return tx
+        return None
 
 
 # 全局数据管理器
@@ -127,6 +140,5 @@ data_manager = DataManager()
 data_manager.load_data()
 users = data_manager.users
 transactions = data_manager.transactions
-print(transactions)
 budgets = data_manager.budgets
 categories = data_manager.categories

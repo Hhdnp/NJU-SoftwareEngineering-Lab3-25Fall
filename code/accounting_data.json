@@ -15,14 +15,6 @@
       "date": "2025-08-31",
       "type": "支出",
       "note": "2"
-    },
-    {
-      "transaction_id": "txn_1761891596559",
-      "amount": 3456.0,
-      "category": "住房",
-      "date": "2025-10-31",
-      "type": "支出",
-      "note": "3"
     }
   ],
   "budgets": [
